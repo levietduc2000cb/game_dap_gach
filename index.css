@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.score_wrapper {
+  font-size: 0.6rem;
+}
+#background_game {
+  width: 90%;
+  height: 90%;
+  border: 0.5px solid black;
+  position: relative;
+}
+#game {
+  width: 100%;
+  height: 100%;
+}
+
+#game_start,
+#game_over,
+#game_win {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-image: url(./image/game_background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.game_over_text,
+.game_win_text,
+.game_start_text {
+  font-size: 2.4rem;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+.game_over_choose {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+.btn_wrapper {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+.btn_yes_over,
+.btn_no_over,
+.btn_yes_win,
+.btn_no_win,
+.btn_yes_start,
+.btn_no_start {
+  width: 4rem;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 0.6rem;
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+  margin: 0 1rem;
+  background-color: white;
+}

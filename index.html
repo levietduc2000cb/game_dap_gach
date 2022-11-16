@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="score_wrapper">Điểm: <span class="score">0</span></div>
+    <div id="background_game">
+      <div id="game_start" style="display: flex">
+        <div class="game_start_text">Game start</div>
+        <div>
+          <div class="game_over_choose">Hãy bắt đầu game nào</div>
+          <div class="btn_wrapper">
+            <button class="btn_yes_start">Có</button>
+            <button class="btn_no_start">Không</button>
+          </div>
+        </div>
+      </div>
+      <canvas id="game"></canvas>
+      <div id="game_over">
+        <div class="game_over_text">Game over</div>
+        <div>
+          <div class="game_over_choose">Bạn có muốn chơi lại?</div>
+          <div class="btn_wrapper">
+            <button class="btn_yes_over">Có</button>
+            <button class="btn_no_over">Không</button>
+          </div>
+        </div>
+      </div>
+      <div id="game_win">
+        <div class="game_win_text">You win</div>
+        <div>
+          <div class="game_over_choose">Bạn có muốn chơi lại?</div>
+          <div class="btn_wrapper">
+            <button class="btn_yes_win">Có</button>
+            <button class="btn_no_win">Không</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
